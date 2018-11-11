@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+    <bean id="BeanWithoutRef" class="com.study.ioccontainer.BeanWithoutRef">
+        <property name="id" value="1"/>
+        <property name="name" value="name_1"/>
+        <property name="value" value="1"/>
+    </bean>
+
+    <bean id="BeanWithRef" class="com.study.ioccontainer.BeanWithRef">
+        <property name="id" value="1"/>
+        <property name="name" value="ref_name_1"/>
+        <property name="beanRef" ref="BeanWithoutRef"/>
+    </bean>
+</beans>
